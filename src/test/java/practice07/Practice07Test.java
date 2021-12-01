@@ -1,32 +1,32 @@
-//package practice07;
-//
-//import org.junit.jupiter.api.BeforeEach;
-//import org.junit.jupiter.api.Test;
-//
-//import static org.assertj.core.api.Assertions.assertThat;
-//
-//public class Practice07Test {
-//    private Klass klass;
-//
-//    @BeforeEach
-//    public void setup() {
-//        klass = new Klass(2);
-//    }
-//
-//    @Test
-//    public void should_person_have_id_name_and_age() throws Exception {
-//        Person person = new Person(1, "Tom", 21);
-//        assertThat(person.getName()).isEqualTo("Tom");
-//        assertThat(person.getAge()).isEqualTo(21);
-//    }
-//
-//    @Test
-//    public void should_person_with_same_id_be_same_one() throws Exception {
-//        Person person1 = new Person(1, "Tom", 21);
-//        Person person2 = new Person(1, "Tom", 21);
-//        assertThat(person1).isEqualTo(person2);
-//    }
-//
+package practice07;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+import static org.assertj.core.api.Assertions.assertThat;
+
+public class Practice07Test {
+    private Klass klass;
+
+    @BeforeEach
+    public void setup() {
+        klass = new Klass(2);
+    }
+
+    @Test
+    public void should_person_have_id_name_and_age() throws Exception {
+        Person person = new Person(1, "Tom", 21);
+        assertThat(person.getName()).isEqualTo("Tom");
+        assertThat(person.getAge()).isEqualTo(21);
+    }
+
+    @Test
+    public void should_person_with_same_id_be_same_one() throws Exception {
+        Person person1 = new Person(1, "Tom", 21);
+        Person person2 = new Person(1, "Tom", 21);
+        assertThat(person1).isEqualTo(person2);
+    }
+
 //    @Test
 //    public void should_person_have_an_introduce_method_which_introduce_person_with_name_and_age() throws Exception {
 //        Person tom = new Person(1, "Tom", 21);
@@ -43,7 +43,7 @@
 //    public void should_class_get_display_name() throws Exception {
 //        assertThat(klass.getDisplayName()).isEqualTo("Class 2");
 //    }
-//
+
 //    @Test
 //    public void should_class_assign_a_leader() throws Exception {
 //        Student jerry = new Student(1, "Jerry", 8, klass);
@@ -64,7 +64,7 @@
 //        Student tom = new Student(1, "Tom", 21, klass);
 //        assertThat(tom.introduce()).isEqualTo("My name is Tom. I am 21 years old. I am a Student. I am at Class 2.");
 //    }
-//
+
 //    @Test
 //    public void should_student_introduce_itself_as_class_leader() throws Exception {
 //        Student tom = new Student(1, "Tom", 21, klass);
@@ -85,7 +85,7 @@
 //        Teacher tom = new Teacher(1, "Tom", 21, klass);
 //        assertThat(tom.introduce()).isEqualTo("My name is Tom. I am 21 years old. I am a Teacher. I teach Class 2.");
 //    }
-//
+
 //    @Test
 //    public void should_teacher_introduce_itself_with_no_class_teaching() throws Exception {
 //        Teacher tom = new Teacher(1, "Tom", 21);
@@ -105,4 +105,4 @@
 //        Student jerry = new Student(1, "Jerry", 8, new Klass(2));
 //        assertThat(tom.introduceWith(jerry)).isEqualTo("My name is Tom. I am 21 years old. I am a Teacher. I don't teach Jerry.");
 //    }
-//}
+}

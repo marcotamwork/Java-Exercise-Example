@@ -1,24 +1,24 @@
-//package practice09;
-//
-//import org.junit.jupiter.api.BeforeEach;
-//import org.junit.jupiter.api.Test;
-//
-//import java.io.ByteArrayOutputStream;
-//import java.io.PrintStream;
-//import java.util.LinkedList;
-//
-//import static org.assertj.core.api.Assertions.assertThat;
-//
-//public class Practice09Test {
-//    private Klass klass;
-//    private ByteArrayOutputStream outContent = new ByteArrayOutputStream();
-//
-//    @BeforeEach
-//    public void setup() {
-//        klass = new Klass(2);
-//        System.setOut(new PrintStream(outContent));
-//    }
-//
+package practice09;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
+import java.util.LinkedList;
+
+import static org.assertj.core.api.Assertions.assertThat;
+
+public class Practice09Test {
+    private Klass klass;
+    private ByteArrayOutputStream outContent = new ByteArrayOutputStream();
+
+    @BeforeEach
+    public void setup() {
+        klass = new Klass(2);
+        System.setOut(new PrintStream(outContent));
+    }
+
 //    @Test
 //    public void should_person_have_id_name_and_age() throws Exception {
 //        Person person = new Person(1, "Tom", 21);
@@ -93,7 +93,7 @@
 //        klass.assignLeader(tom);
 //        assertThat(tom.introduce()).isEqualTo("My name is Tom. I am 21 years old. I am a Student. I am Leader of Class 2.");
 //    }
-//
+
 //    @Test
 //    public void should_teacher_have_name_and_age_and_classes() throws Exception {
 //        LinkedList<Klass> linkedList = new LinkedList<Klass>();
@@ -120,7 +120,7 @@
 //        Teacher tom = new Teacher(1, "Tom", 21);
 //        assertThat(tom.introduce()).isEqualTo("My name is Tom. I am 21 years old. I am a Teacher. I teach No Class.");
 //    }
-//
+
 //    @Test
 //    public void should_teacher_isTeaching_return_true_when_the_student_is_in_any_classes_the_teacher_teaches() throws Exception {
 //        LinkedList<Klass> linkedList = new LinkedList<Klass>();
@@ -161,4 +161,4 @@
 //        Student jerry = new Student(1, "Jerry", 8, new Klass(2));
 //        assertThat(tom.introduceWith(jerry)).isEqualTo("My name is Tom. I am 21 years old. I am a Teacher. I don't teach Jerry.");
 //    }
-//}
+}

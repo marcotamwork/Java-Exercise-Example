@@ -1,10 +1,10 @@
-//package practice05;
-//
-//import org.junit.jupiter.api.Test;
-//
-//import static org.assertj.core.api.Assertions.assertThat;
-//
-//public class Practice05Test {
+package practice05;
+
+import org.junit.jupiter.api.Test;
+
+import static org.assertj.core.api.Assertions.assertThat;
+
+public class Practice05Test {
 //    @Test
 //    public void should_person_have_name_and_age() throws Exception {
 //        Person person = new Person("Tom", 21);
@@ -26,7 +26,7 @@
 //        assertThat(tom.getAge()).isEqualTo(21);
 //        assertThat(tom.getKlass()).isEqualTo(2);
 //    }
-//
+
 //    @Test
 //    public void should_student_introduce_with_class() throws Exception {
 //        Student tom = new Student("Tom", 21, 2);
@@ -46,10 +46,10 @@
 //        Teacher tom = new Teacher("Tom", 21, 2);
 //        assertThat(tom.introduce()).isEqualTo("My name is Tom. I am 21 years old. I am a Teacher. I teach Class 2.");
 //    }
-//
-//    @Test
-//    public void should_teacher_introduce_itself_with_no_class_teaching() throws Exception {
-//        Teacher tom = new Teacher("Tom", 21);
-//        assertThat(tom.introduce()).isEqualTo("My name is Tom. I am 21 years old. I am a Teacher. I teach No Class.");
-//    }
-//}
+
+    @Test
+    public void should_teacher_introduce_itself_with_no_class_teaching() throws Exception {
+        Teacher tom = new Teacher("Tom", 21);
+        assertThat(tom.introduce()).isEqualTo("My name is Tom. I am 21 years old. I am a Teacher. I teach No Class.");
+    }
+}

@@ -1,10 +1,10 @@
-//package practice04;
-//
-//import org.junit.jupiter.api.Test;
-//
-//import static org.assertj.core.api.Assertions.assertThat;
-//
-//public class Practice04Test {
+package practice04;
+
+import org.junit.jupiter.api.Test;
+
+import static org.assertj.core.api.Assertions.assertThat;
+
+public class Practice04Test {
 //    @Test
 //    public void should_person_have_name_and_age() throws Exception {
 //        Person person = new Person("Tom", 21);
@@ -32,17 +32,17 @@
 //        Student tom = new Student("Tom", 21, 2);
 //        assertThat(tom.introduce()).isEqualTo("My name is Tom. I am 21 years old. I am a Student. I am at Class 2.");
 //    }
-//
-//    @Test
-//    public void should_worker_have_name_and_age() throws Exception {
-//        Worker tom = new Worker("Tom", 21);
-//        assertThat(tom.getName()).isEqualTo("Tom");
-//        assertThat(tom.getAge()).isEqualTo(21);
-//    }
-//
-//    @Test
-//    public void should_worker_introduce_itself_with_no_field() throws Exception {
-//        Worker tom = new Worker("Tom", 21);
-//        assertThat(tom.introduce()).isEqualTo("My name is Tom. I am 21 years old. I am a Worker. I have a job.");
-//    }
-//}
+
+    @Test
+    public void should_worker_have_name_and_age() throws Exception {
+        Worker tom = new Worker("Tom", 21);
+        assertThat(tom.getName()).isEqualTo("Tom");
+        assertThat(tom.getAge()).isEqualTo(21);
+    }
+
+    @Test
+    public void should_worker_introduce_itself_with_no_field() throws Exception {
+        Worker tom = new Worker("Tom", 21);
+        assertThat(tom.introduce()).isEqualTo("My name is Tom. I am 21 years old. I am a Worker. I have a job.");
+    }
+}
